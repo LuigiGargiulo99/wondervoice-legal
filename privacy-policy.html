@@ -37,7 +37,7 @@ footer.site .wrap { padding-top:20px; padding-bottom:40px; }
 <body>
 <header class="site"><div class="wrap"><a class="brand" href="index.html">WonderVoice</a><nav class="top"><a href="index.html">Home</a><a href="privacy-policy.html" class="active">Privacy</a><a href="terms-of-service.html">Terms</a><a href="eula.html">EULA</a><a href="delete-account.html">Delete account</a></nav></div></header>
 <div class="wrap"><main><h1>Privacy Policy — WonderVoice</h1>
-<p><strong>Last updated:</strong> 3 October 2026</p>
+<p><strong>Last updated:</strong> 7 October 2026</p>
 <hr>
 <h2>1. Data controller</h2>
 <p>The controller of the personal data collected through the mobile application
@@ -63,13 +63,16 @@ have their own policies.</p>
 collect geographic location (GPS), and does NOT access the camera, microphone,
 contacts or photo gallery.</strong></p>
 <h3>3.1 Account data (authentication)</h3>
-<p>Access is via <strong>Google Sign-In</strong>. From Google we receive and store:</p>
+<p>Access is via <strong>Google Sign-In</strong> or <strong>Sign in with Apple</strong>. From the provider
+you choose we receive and store:</p>
 <ul>
 <li>user identifier (ID),</li>
-<li>email address.</li>
+<li>email address. With Sign in with Apple you can choose to hide your email: in
+that case we receive only an Apple private relay address.</li>
 </ul>
-<p>We do not receive or store your Google account password. Your Google profile
-photo is neither downloaded nor stored.</p>
+<p>We do not receive or store your Google or Apple account password. We do not
+request your name from Apple, and your Google profile photo is neither
+downloaded nor stored.</p>
 <h3>3.2 Travel preferences (provided by you)</h3>
 <p>In the preferences section you may optionally indicate:</p>
 <ul>
@@ -105,8 +108,10 @@ retained</strong> after verification. Some purchase references are stored in enc
 form. <strong>We never process your credit card data</strong>, which is handled exclusively by
 Google/Apple.</p>
 <h3>3.5 Push notifications</h3>
-<p>If you consent to notifications, we register a notification token (Expo/Firebase),
-the platform (Android/iOS), the device name and the App version.</p>
+<p>If you consent to notifications, we register a notification token (Expo,
+delivered through Firebase Cloud Messaging on Android and the Apple Push
+Notification service on iOS), the platform (Android/iOS), the device name and
+the App version.</p>
 <h3>3.6 Technical and usage data</h3>
 <ul>
 <li><strong>Activity log</strong>: functional events (login, itinerary/audio-guide generation,
@@ -240,6 +245,12 @@ it according to our instructions and the GDPR.</p>
 <td>EU/USA (with safeguards, see §7)</td>
 </tr>
 <tr>
+<td><strong>Apple</strong></td>
+<td>Authentication (Sign in with Apple), push notifications on iOS (APNs)</td>
+<td>Apple user ID, email or private relay address, notification token</td>
+<td>EU/USA (with safeguards, see §7)</td>
+</tr>
+<tr>
 <td><strong>Sentry</strong></td>
 <td>Error reporting and diagnostics</td>
 <td>User ID and email, technical error data</td>
@@ -257,7 +268,7 @@ about you: they only receive the total of their commissions.</p>
 <p>We may also disclose data to judicial or public authorities where required by law.</p>
 <hr>
 <h2>7. Data transfers outside the European Union</h2>
-<p>Some providers (in particular OpenAI, ElevenLabs and some Google services) may
+<p>Some providers (in particular OpenAI, ElevenLabs and some Google and Apple services) may
 process data in the United States. Such transfers take place with adequate
 safeguards under Articles 44 et seq. of the GDPR, namely:</p>
 <ul>
@@ -308,7 +319,9 @@ residence.</p>
 <p>You can delete your account and the associated data yourself directly from the
 App: <strong>Settings → Delete account</strong>. Deletion permanently removes your profile,
 preferences, itineraries, audio guides, audio files, notification tokens,
-the partner code you entered and the activity log.</p>
+the partner code you entered and the activity log. If you signed in with Apple,
+we also revoke the App&#39;s access to your Apple ID (you can also manage it in your
+Apple ID settings, under Sign in with Apple).</p>
 <p>You can also request deletion by writing to <strong><a href="mailto:galusolutions@gmail.com">galusolutions@gmail.com</a></strong>.</p>
 <p>Some purchase-related data may be retained for the time required by tax
 obligations (see §8), in minimised form. Partner commission records are kept
